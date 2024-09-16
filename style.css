@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: fantasy;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 15px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 4px 1px;
+
+    img{
+      width:100%;
+      /* height: 300px; */
+
+      aspect-ratio: 1;
+      object-fit: contain;
+    }
+
+    h3{
+      display: -webkit-box ;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+    }
+
+    p{
+      display: -webkit-box ;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+body {
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+@keyframes anim1 {
+  0% {
+    background-color: aqua;
+    box-shadow: 0 0 50px 1px rebeccapurple;
+    scale: 1;
+
+  }
+
+  100% {
+    background-color: brown;
+    box-shadow: 0 0 50px 1px black;
+    scale: 1.3;
+ 
+  }
+}
